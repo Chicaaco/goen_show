@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Clickable Image</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Goen Interactive</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <img src="map.png" alt="Background" class="bg-image">
-    <div class="hotspot" style="top: 30%; left: 40%;" onclick="openModal('ここはスポットAやで')"></div>
-    <div class="hotspot" style="top: 60%; left: 70%;" onclick="openModal('スポットBにようこそ')"></div>
+    <img src="map.png" alt="Background" class="bg-image" />
+
+    <div class="hotspot" style="top: 20%; left: 40%;" onclick="openModal(event, 'modal1')"></div>
+    <div class="hotspot" style="top: 35%; left: 60%;" onclick="openModal(event, 'modal2')"></div>
+    <div class="hotspot" style="top: 50%; left: 30%;" onclick="openModal(event, 'modal3')"></div>
+    <div class="hotspot" style="top: 65%; left: 50%;" onclick="openModal(event, 'modal4')"></div>
+    <div class="hotspot" style="top: 80%; left: 70%;" onclick="openModal(event, 'modal5')"></div>
   </div>
 
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <p id="modal-text"></p>
+  <div id="modal" class="modal" onclick="closeModal()">
+    <div id="modal-content" class="modal-content" onclick="event.stopPropagation()">
+      <!-- JSで内容が入る -->
     </div>
   </div>
 
