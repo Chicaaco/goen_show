@@ -90,7 +90,7 @@ body {
 
   /* 📱 モーダル内の本文（スマホだけフォント大きめ） */
   .modal-content p {
-    font-size: 24px;
-    line-height: 2.0;
+    font-size: 24px !important;
+    line-height: 2.0 !important;
   }
 }
