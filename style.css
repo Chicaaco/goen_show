@@ -54,6 +54,15 @@ body {
   max-height: 80vh;
 }
 
+.modal-content img,
+.modal-content video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 12px 0;
+}
+
 /* Closeボタン */
 .close {
   position: absolute;
@@ -70,7 +79,7 @@ body {
 @media (max-width: 600px) {
   .modal-content {
     width: 80vw;
-    font-size: 15px;
-    padding: 18px;
+    font-size: 18px;
+    padding: 22px;
   }
 }
