@@ -54,6 +54,11 @@ body {
   max-height: 80vh;
 }
 
+.modal-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 .modal-content img,
 .modal-content video {
   width: 100%;
@@ -83,7 +88,8 @@ body {
     padding: 22px;
   }
 
-  /* 🆕 モーダル内の本文（スマホだけフォント大きめに） */
+/* 🆕 モーダル内の本文（スマホだけフォント大きめに） */
+@media (max-width: 600px) {
   .modal-content p {
     font-size: 22px;
     line-height: 1.8;
