@@ -10,7 +10,7 @@ const modalContents = {
     <p>This video shows what Goen’s service experience looks like through our user’s eyes.</p>
     <video 
     controls 
-    poster="images/Storyboard_Thumbnail.jpg" 
+    poster="images/Storyboard_Thumbnail.png" 
     style="width:100%;">
       <source src="videos/Storyboard.mp4" type="video/mp4">
       Your browser does not support the video tag.
@@ -21,7 +21,7 @@ const modalContents = {
     <p>We ran an MVP experience where guests joined a local Japanese home for a shared dinner, and collected feedback on how it felt.</p>
     <video 
     controls 
-    poster="images/Prototype_Thumbnail.jpg" 
+    poster="images/Prototype_Thumbnail.png" 
     style="width:100%;">
       <source src="videos/Prototype_Test.mp4" type="video/mp4">
       Your browser does not support the video tag.
