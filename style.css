@@ -27,8 +27,10 @@ body {
 /* スマホ用に大きくする */
 @media (max-width: 768px) {
   .hotspot {
-    width: 70px;
-    height: 70px;
+    width: 70px !important;
+    height: 70px !important;
+    display: inline-block;
+    font-size: 24px;
   }
 }
 
