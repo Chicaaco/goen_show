@@ -38,21 +38,39 @@ body {
 
 /* モーダルの中身 */
 .modal-content {
-  position: absolute;
-  background-color: #fff;
-  padding: 20px;
-  max-width: 90%;
-  max-height: 80%;
-  border-radius: 10px;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.3);
-  overflow-y: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 70vw;
+  max-width: 600px;
+  padding: 24px;
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+/* Closeボタン */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+  cursor: pointer;
+  z-index: 999;
 }
 
 /* スマホ対応 */
 @media (max-width: 600px) {
   .modal-content {
-    font-size: 14px;
-    padding: 15px;
+    width: 80vw;
+    font-size: 15px;
+    padding: 18px;
   }
 }

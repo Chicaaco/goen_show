@@ -40,13 +40,7 @@ const modalContents = {
 function openModal(event, modalKey) {
   const modal = document.getElementById("modal");
   const modalContent = document.getElementById("modal-content");
-  modalContent.innerHTML = modalContents[modalKey];
-
-  // モーダルの位置調整
-  const x = event.clientX;
-  const y = event.clientY;
-  modalContent.style.left = `${x}px`;
-  modalContent.style.top = `${y}px`;
+  modalContent.innerHTML = `<span class="close" onclick="closeModal()">&times;</span>` + modalContents[modalKey];
 
   modal.style.display = "block";
 }
