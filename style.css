@@ -82,4 +82,10 @@ body {
     font-size: 18px;
     padding: 22px;
   }
+
+  /* 🆕 モーダル内の本文（スマホだけフォント大きめに） */
+  .modal-content p {
+    font-size: 20px;
+    line-height: 1.8;
+  }
 }
