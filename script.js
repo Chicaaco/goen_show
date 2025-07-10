@@ -3,7 +3,7 @@ const modalContents = {
     <h2>About Goen</h2>
     <p>Goen is a human-centred cultural connection platform that facilitates real-life experiences between Japan-related hosts and curious guests in London.</p>
     <p>* “Goen” means “connection” in Japanese</p>
-    <img src="images/UI.png" alt="Examples of User Interface" style="width:100%;">
+    <img src="images/UI.png" alt="Examples of User Interface" style="width:100%;" class="zoomable-img">
   `,
   modal2: `
     <h2>Storyboard</h2>
@@ -30,18 +30,18 @@ const modalContents = {
   modal4: `
     <h2>System Map</h2>
     <p>Overview of how our service ecosystem works.</p>
-    <img src="images/System_Map.jpg" alt="System Map" style="width:100%;">
+    <img src="images/System_Map.jpg" alt="System Map" style="width:100%;" class="zoomable-img">
   `,
   modal5: `
     <h2>Further Business Model</h2>
     <p>Looking ahead, our long-term vision involves building strategic partnerships with Japanese companies.</p>
     <p>By offering sponsorships, or product or material support, they can use Goen as a platform for local brand engagement, marketing, and real-world product trials. For example, a well-known Japanese cafe brand not yet in London could host a pop-up experience, letting guests try something they could only find in Japan.</p>
-    <img src="images/System_Map_Long.jpg" alt="Business Model" style="width:100%;">
+    <img src="images/System_Map_Long.jpg" alt="Business Model" style="width:100%;" class="zoomable-img">
   `,
   modal6: `
     <h2>Impact</h2>
     <p>Impact on each stakeholders.</p>
-    <img src="images/Impact.jpg" alt="Impact" style="width:100%;">
+    <img src="images/Impact.jpg" alt="Impact" style="width:100%;" class="zoomable-img">
   `,
   modal7: `
     <h2>Contact</h2>
@@ -61,3 +61,21 @@ function openModal(event, modalKey) {
 function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
+
+// 拡大用オーバーレイ作成
+const overlay = document.createElement('div');
+overlay.id = 'image-overlay';
+document.body.appendChild(overlay);
+
+// クリックされた画像を表示
+document.querySelectorAll('.zoomable-img').forEach(img => {
+  img.addEventListener('click', () => {
+    overlay.innerHTML = `<img src="${img.src}" alt="Zoomed">`;
+    overlay.style.display = 'flex';
+  });
+});
+
+// オーバーレイをクリックしたら閉じる
+overlay.addEventListener('click', () => {
+  overlay.style.display = 'none';
+});
