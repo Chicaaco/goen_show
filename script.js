@@ -39,9 +39,9 @@ const modalContents = {
     <img src="images/System_Map_Long.jpg" alt="Business Model" style="width:100%;">
   `,
   modal6: `
-  <h2>Impact</h2>
-  <p>Impact on each stakeholders.</p>
-  <img src="images/Impact.jpg" alt="Impact" style="width:100%;">
+    <h2>Impact</h2>
+    <p>Impact on each stakeholders.</p>
+    <img src="images/Impact.jpg" alt="Impact" style="width:100%;">
   `,
   modal7: `
     <h2>Contact</h2>
