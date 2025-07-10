@@ -2,11 +2,18 @@ const modalContents = {
   modal1: `
     <h2>Storyboard</h2>
     <p>This video shows what Goen’s service experience looks like through our user’s eyes.</p>
-    <p><a href="https://drive.google.com/file/d/1lX0q7fgP_x_Z1NiU_z0CaaQPf08V7oqA/view?usp=sharing" target="_blank">▶ Watch Video on Google Drive</a></p>
+    <video controls style="width:100%; max-width:600px;">
+      <source src="videos/Storyboard.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   `,
   modal2: `
     <h2>Prototype Test</h2>
     <p>We ran an MVP experience where guests joined a local Japanese home for a shared dinner, and collected feedback on how it felt.</p>
+    <video controls style="width:100%; max-width:500px;">
+    <source src="videos/Prototype_Test.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
   `,
   modal3: `
     <h2>System Map</h2>
