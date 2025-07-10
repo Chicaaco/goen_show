@@ -92,7 +92,8 @@ body {
 @media (max-width: 600px) {
   .modal-content {
     width: 80vw;
-    font-size: 20px;
+    font-size: 24px !important;
+    -webkit-text-size-adjust: none;
     padding: 24px;
   }
 
