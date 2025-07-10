@@ -24,6 +24,14 @@ body {
   cursor: pointer;
 }
 
+/* スマホ用に大きくする */
+@media (max-width: 600px) {
+  .hotspot {
+    width: 70px;
+    height: 70px;
+  }
+}
+
 /* モーダル全体の背景 */
 .modal {
   display: none;
