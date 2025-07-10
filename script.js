@@ -47,7 +47,7 @@ const modalContents = {
     <h2>Contact</h2>
     <p>Akane Nemoto <a href="mailto:10044370@network.rca.ac.uk">10044370@network.rca.ac.uk</a></p>
     <p>Chika Nakamura <a href="mailto:10045475@network.rca.ac.uk">10045475@network.rca.ac.uk</a></p>
-  `
+  `,
 };
 
 function openModal(event, modalKey) {
