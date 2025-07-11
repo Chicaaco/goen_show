@@ -137,17 +137,3 @@ body {
   border-radius: 10px;
   cursor: zoom-out;
 }
-
-.image-row {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap; /* スマホで折り返しできるように */
-}
-
-.image-row .side-img {
-  width: 45%; /* 50%より少し小さめで余裕持たせる */
-  height: auto;
-  border-radius: 8px;
-}
