@@ -28,24 +28,6 @@
 
   <script src="script.js"></script>
 
-  <!-- 画像拡大用のスクリプト -->
-<script>
-  // 全ての.zoomable-img にクリックイベントを追加
-  document.querySelectorAll('.zoomable-img').forEach(img => {
-    img.addEventListener('click', function () {
-      const overlay = document.getElementById('image-overlay');
-      const overlayImg = overlay.querySelector('img');
-      overlayImg.src = this.src; // クリックされた画像のURLを代入
-      overlay.style.display = 'flex';
-    });
-  });
-
-  // オーバーレイ自体をクリックしたら閉じる
-  document.getElementById('image-overlay').addEventListener('click', function () {
-    this.style.display = 'none';
-  });
-</script>
-
 <!-- 拡大用の画像オーバーレイ -->
 <div id="image-overlay">
   <img src="" alt="Zoomed Image">

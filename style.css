@@ -57,7 +57,7 @@ body {
   max-width: 600px;
   padding: 24px;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.4;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   overflow-y: auto;
@@ -66,14 +66,14 @@ body {
 
 .modal-content p {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 /* スマホだけで上書き */
 @media (max-width: 768px) {
   .modal-content p {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.4;
   }
 }
 
@@ -104,7 +104,7 @@ body {
     width: 80vw;
     font-size: 16px !important;
     -webkit-text-size-adjust: none;
-    padding: 24px;
+    padding: 20px;
   }
 }
 
