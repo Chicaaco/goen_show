@@ -49,7 +49,7 @@ const modalContents = {
     <p class="modal-text">Akane Nemoto <a href="mailto:10044370@network.rca.ac.uk">10044370@network.rca.ac.uk</a></p>
     <p class="modal-text">Chika Nakamura <a href="mailto:10045475@network.rca.ac.uk">10045475@network.rca.ac.uk</a></p>
     <img src="images/RCA_Logo.jpg" alt="Royal College of Art Logo" style="width:30%;">
-    <img src="images/SD_Logo.jpg" alt="Royal College of Art Service Design Logo" style="width:30%;">
+    <img src="images/SD_Logo.png" alt="Royal College of Art Service Design Logo" style="width:30%;">
   `,
 };
 
