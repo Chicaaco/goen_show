@@ -1,13 +1,13 @@
 const modalContents = {
   modal1: `
     <h2>About Goen</h2>
-    <p>Goen is a human-centred cultural connection platform that facilitates real-life experiences between Japan-related hosts and curious guests in London.</p>
-    <p>* “Goen” means “connection” in Japanese</p>
+    <p class="modal-text">Goen is a human-centred cultural connection platform that facilitates real-life experiences between Japan-related hosts and curious guests in London.</p>
+    <p class="modal-text">* “Goen” means “connection” in Japanese</p>
     <img src="images/UI.png" alt="Examples of User Interface" style="width:100%;" class="zoomable-img">
   `,
   modal2: `
     <h2>Storyboard</h2>
-    <p>This video shows what Goen’s service experience looks like through our user’s eyes.</p>
+    <p class="modal-text">This video shows what Goen’s service experience looks like through our user’s eyes.</p>
     <video 
     controls 
     poster="images/Storyboard_Thumbnail.png" 
@@ -18,7 +18,7 @@ const modalContents = {
   `,
   modal3: `
     <h2>Prototype Test</h2>
-    <p>We ran an MVP experience where guests joined a local Japanese home for a shared dinner, and collected feedback on how it felt.</p>
+    <p class="modal-text">We ran an MVP experience where guests joined a local Japanese home for a shared dinner, and collected feedback on how it felt.</p>
     <video 
     controls 
     poster="images/Prototype_Thumbnail.png" 
@@ -29,13 +29,14 @@ const modalContents = {
   `,
   modal4: `
     <h2>System Map</h2>
-    <p>Overview of how our service ecosystem works.</p>
+    <p class="modal-text">Overview of how our service ecosystem works.</p>
+    <p class="modal-text">A seamless and reassuring onboarding process, including guest verification and host screening, and combined with early communication and post-experience feedback, helps both guests and hosts feel confident, safe, and connected.</p>
     <img src="images/System_Map.jpg" alt="System Map" style="width:100%;" class="zoomable-img">
   `,
   modal5: `
     <h2>Further Business Model</h2>
-    <p>Looking ahead, our long-term vision involves building strategic partnerships with Japanese companies.</p>
-    <p>By offering sponsorships, or product or material support, they can use Goen as a platform for local brand engagement, marketing, and real-world product trials. For example, a well-known Japanese cafe brand not yet in London could host a pop-up experience, letting guests try something they could only find in Japan.</p>
+    <p class="modal-text">Looking ahead, our long-term vision involves building strategic partnerships with Japanese companies.</p>
+    <p class="modal-text">By offering sponsorships, or product or material support, they can use Goen as a platform for local brand engagement, marketing, and real-world product trials. For example, a well-known Japanese cafe brand not yet in London could host a pop-up experience, letting guests try something they could only find in Japan.</p>
     <img src="images/System_Map_Long.jpg" alt="Business Model" style="width:100%;" class="zoomable-img">
   `,
   modal6: `
@@ -45,9 +46,9 @@ const modalContents = {
   `,
   modal7: `
     <h2>Contact</h2>
-    <p>Akane Nemoto <a href="mailto:10044370@network.rca.ac.uk">10044370@network.rca.ac.uk</a></p>
-    <p>Chika Nakamura <a href="mailto:10045475@network.rca.ac.uk">10045475@network.rca.ac.uk</a></p>
-    <img src="images/RCA_Logo.jpg" alt="Royal College of Art Logo" style="width:50%;">
+    <p class="modal-text">Akane Nemoto <a href="mailto:10044370@network.rca.ac.uk">10044370@network.rca.ac.uk</a></p>
+    <p class="modal-text">Chika Nakamura <a href="mailto:10045475@network.rca.ac.uk">10045475@network.rca.ac.uk</a></p>
+    <img src="images/RCA_Logo.jpg" alt="Royal College of Art Logo" style="width:20%;">
   `,
 };
 

@@ -24,13 +24,13 @@ body {
   cursor: pointer;
 }
 
-/* スマホ用に大きくする */
 @media (max-width: 768px) {
   .hotspot {
     width: 70px !important;
     height: 70px !important;
-    display: inline-block;
-    font-size: 24px;
+    display: inline-block !important;
+    font-size: 24px !important;
+    background-color: rgba(255, 0, 0, 0.8) !important; /* ← 確認用に濃くしてみて */
   }
 }
 
