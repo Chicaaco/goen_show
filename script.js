@@ -47,9 +47,18 @@ const modalContents = {
   modal7: `
     <h2>Contact</h2>
     <p class="modal-text">Akane Nemoto <a href="mailto:10044370@network.rca.ac.uk">10044370@network.rca.ac.uk</a></p>
-    <p class="modal-text">Chika Nakamura <a href="mailto:10045475@network.rca.ac.uk">10045475@network.rca.ac.uk</a></p>
-    <img src="images/RCA_Logo.jpg" alt="Royal College of Art Logo" style="width:30%;">
-    <img src="images/SD_Logo.png" alt="Royal College of Art Service Design Logo" style="width:30%;">
+    <p class="modal-text">Chika Nakamura <a href="mailto:10045475@network.rca.ac.uk">10045475@network.rca.ac.uk</a><br>
+    　　<a href="https://www.linkedin.com/in/chika-nk-ak" target="_blank">LinkedIn</a>
+    　　<a href="https://www.instagram.com/chic_a_co?igsh=MTB3d211ZWZlbGhzMw%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+    </p>
+    <div class="image-row">
+     <a href="https://www.rca.ac.uk/" target="_blank">
+     <img src="images/RCA_Logo.jpg" alt="Royal College of Art Logo" style="width:30%;">
+     </a>
+     <a href="https://www.rcaservicedesign.com/" target="_blank">
+     <img src="images/SD_Logo.png" alt="Royal College of Art Service Design Logo" style="width:15%;">
+     </a>
+    </div>
   `,
 };
 
