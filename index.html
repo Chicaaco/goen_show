@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Goen: Shared Moment with Japanese Culture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <h2 id="modal-title" style="display:none;">Goen Modal</h2>
   <div class="container">
     <img src="map.png" alt="Background" class="bg-image" />
 
@@ -19,9 +21,11 @@
     <div class="hotspot" style="top: 95%; left: 42%;" onclick="openModal(event, 'modal7')"></div>
   </div>
 
-  <div id="modal" class="modal" onclick="closeModal()">
-    <div id="modal-content" class="modal-content" onclick="event.stopPropagation()">
-      <span class="close" onclick="closeModal()">&times;</span>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="closeModal()">
+    <div id="modal-content" class="modal-content" tabindex="-1" onclick="event.stopPropagation()">
+      <h2 id="modal-title" style="display: none;">Goen Modal</h2> <!-- 動的に書き換える用の見出し -->
+      <span class="close" onclick="closeModal()" tabindex="0" aria-label="Close">&times;</span>
       <!-- モーダルの中身は script.js で差し替え -->
     </div>
   </div>

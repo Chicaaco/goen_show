@@ -45,7 +45,7 @@ const modalContents = {
     <img src="images/Impact.jpg" alt="Impact" style="width:100%;" class="zoomable-img">
   `,
   modal7: `
-    <h2>Contact</h2>
+    <h2>Contact / Follow Us</h2>
     <p class="modal-text">Akane Nemoto <a href="mailto:10044370@network.rca.ac.uk">10044370@network.rca.ac.uk</a></p>
     <p class="modal-text">Chika Nakamura <a href="mailto:10045475@network.rca.ac.uk">10045475@network.rca.ac.uk</a><br>
     　　<a href="https://www.linkedin.com/in/chika-nk-ak" target="_blank">LinkedIn</a><br>
@@ -63,39 +63,90 @@ const modalContents = {
 function openModal(event, modalKey) {
   const modal = document.getElementById("modal");
   const modalContent = document.getElementById("modal-content");
-  modalContent.innerHTML = `<span class="close" onclick="closeModal()">&times;</span>` + modalContents[modalKey];
+
+  modalContent.innerHTML = `
+    <span class="close" onclick="closeModal()" tabindex="0" aria-label="Close">&times;</span>
+    ${modalContents[modalKey]}
+  `;
+
+  const titleEl = document.getElementById("modal-title");
+  if (titleEl) {
+    titleEl.textContent = getTitleFromContent(modalKey);
+  }
 
   modal.style.display = "block";
+  modalContent.setAttribute("tabindex", "-1");
+  modalContent.focus();
+  trapFocus(modalContent);
 
-
- document.querySelectorAll('.zoomable-img').forEach(img => {
-  img.addEventListener('click', function () {
-    const overlay = document.getElementById('image-overlay');
-    const overlayImg = overlay.querySelector('img');
-    overlayImg.src = this.src;
-    overlay.style.display = 'flex';
-   });
-});
+  modalContent.querySelectorAll(".zoomable-img").forEach((img) => {
+    img.addEventListener("click", () => {
+      const overlay = document.getElementById("image-overlay");
+      const overlayImg = overlay.querySelector("img");
+      overlayImg.src = img.src;
+      overlay.style.display = "flex";
+    });
+  });
 }
 
 function closeModal() {
   document.getElementById("modal").style.display = "none";
+  document.removeEventListener("keydown", handleKeyEvents);
 }
 
-// 拡大用オーバーレイ作成
-const overlay = document.createElement('div');
-overlay.id = 'image-overlay';
+function handleKeyEvents(e) {
+  const modal = document.getElementById("modal");
+  if (e.key === "Escape") {
+    closeModal();
+  } else if (e.key === "Tab") {
+    const focusable = modal.querySelectorAll(
+      'a[href], button, textarea, input, select, [tabindex]:not([tabindex="-1"])'
+    );
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+
+    if (e.shiftKey) {
+      if (document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      }
+    } else {
+      if (document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+  }
+}
+
+function trapFocus(modalContent) {
+  document.addEventListener("keydown", handleKeyEvents);
+}
+
+const overlay = document.createElement("div");
+overlay.id = "image-overlay";
+overlay.style.display = "none";
+overlay.style.position = "fixed";
+overlay.style.top = 0;
+overlay.style.left = 0;
+overlay.style.width = "100vw";
+overlay.style.height = "100vh";
+overlay.style.background = "rgba(0,0,0,0.8)";
+overlay.style.zIndex = 9999;
+overlay.style.justifyContent = "center";
+overlay.style.alignItems = "center";
+overlay.style.display = "none";
+
+const overlayImg = document.createElement("img");
+overlayImg.style.maxWidth = "90vw";
+overlayImg.style.maxHeight = "90vh";
+overlayImg.style.boxShadow = "0 0 20px rgba(255,255,255,0.3)";
+overlayImg.style.borderRadius = "10px";
+overlayImg.style.cursor = "zoom-out";
+
+overlay.appendChild(overlayImg);
 document.body.appendChild(overlay);
 
-// クリックされた画像を表示
-document.querySelectorAll('.zoomable-img').forEach(img => {
-  img.addEventListener('click', () => {
-    overlay.innerHTML = `<img src="${img.src}" alt="Zoomed">`;
-    overlay.style.display = 'flex';
-  });
-});
-
-// オーバーレイをクリックしたら閉じる
-overlay.addEventListener('click', () => {
-  overlay.style.display = 'none';
+overlay.addEventListener("click", () => {
+  overlay.style.display = "none";
 });
