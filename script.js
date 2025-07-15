@@ -3,8 +3,8 @@ const modalContents = {
     <h2>About Goen</h2>
     <p class="modal-text">Goen is a human-centred cultural connection platform that facilitates real-life experiences between Japan-related hosts and curious guests in London.</p>
     <p class="modal-text">* “Goen” means “connection” in Japanese</p>
-    <img src="images/Concept.jpg" class="zoomable-img" alt="Service Concept" style="width:100%;">
     <img src="images/UI.png" class="zoomable-img" alt="Examples of User Interface" style="width:100%;">
+    <img src="images/Concept.jpg" class="zoomable-img" alt="Service Concept" style="width:100%;">
   `,
   modal2: `
     <h2>Storyboard</h2>
