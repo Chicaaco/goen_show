@@ -55,7 +55,7 @@ const modalContents = {
      <img src="images/RCA_Logo.jpg" alt="Royal College of Art Logo" style="width:30%;">
      </a>
      <a href="https://www.rcaservicedesign.com/" target="_blank">
-     <img src="images/SD_Logo.png" alt="Royal College of Art Service Design Logo" style="width:15%;">
+     <img src="images/SD_Logo.png" alt="Royal College of Art Service Design Logo" style="width:12%;">
      </a>
   `,
 };
