@@ -69,11 +69,6 @@ function openModal(event, modalKey) {
     ${modalContents[modalKey]}
   `;
 
-  const titleEl = document.getElementById("modal-title");
-  if (titleEl) {
-    titleEl.textContent = getTitleFromContent(modalKey);
-  }
-
   modal.style.display = "block";
   modalContent.setAttribute("tabindex", "-1");
   modalContent.focus();
