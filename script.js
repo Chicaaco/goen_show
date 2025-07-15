@@ -3,6 +3,7 @@ const modalContents = {
     <h2>About Goen</h2>
     <p class="modal-text">Goen is a human-centred cultural connection platform that facilitates real-life experiences between Japan-related hosts and curious guests in London.</p>
     <p class="modal-text">* “Goen” means “connection” in Japanese</p>
+    <img src="images/Concept.jpg" class="zoomable-img" alt="Service Concept" style="width:100%;">
     <img src="images/UI.png" class="zoomable-img" alt="Examples of User Interface" style="width:100%;">
   `,
   modal2: `
@@ -10,7 +11,7 @@ const modalContents = {
     <p class="modal-text">This video shows what Goen’s service experience looks like through our user’s eyes.</p>
     <video 
     controls 
-    poster="images/Storyboard_Thumbnail.png" 
+    poster="images/Storyboard_Thumbnail.jpg" 
     style="width:100%;">
       <source src="videos/Storyboard.mp4" type="video/mp4">
       Your browser does not support the video tag.
