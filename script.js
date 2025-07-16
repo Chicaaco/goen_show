@@ -20,7 +20,7 @@ const modalContents = {
   modal3: `
     <h2>Prototype Test</h2>
     <p class="modal-text">We ran an MVP experience where guests joined a local Japanese home for a shared dinner, and collected feedback on how it felt.</p>
-    <p class="modal-text"><em><q>"Tasting dashi was a highlight; I’d never tried it before. I also loved how this brought people together to experience the same thing. It felt personal and special."</q></em></p>
+    <p class="modal-text"><em><q>Tasting dashi was a highlight; I’d never tried it before. I also loved how this brought people together to experience the same thing. It felt personal and special.</q></em></p>
     <video 
     controls 
     poster="images/Prototype_Thumbnail.png" 
@@ -39,7 +39,7 @@ const modalContents = {
     <h2>Further Business Model</h2>
     <p class="modal-text">Looking ahead, our long-term vision involves building strategic partnerships with Japanese companies.</p>
     <p class="modal-text">By offering sponsorships, or product or material support, they can use Goen as a platform for local brand engagement, marketing, and real-world product trials. For example, a well-known Japanese cafe brand not yet in London could host a pop-up experience, letting guests try something they could only find in Japan.</p>
-    <p class="modal-text"><em><q>"This offers something more real, more authentic, and cooler. It’s like a window it can’t be experienced unless you go to Japan or step into your site."</q></em></p>
+    <p class="modal-text"><em><q>This offers something more real, more authentic, and cooler. It’s like a window it can’t be experienced unless you go to Japan or step into your site.</q></em></p>
     <img src="images/System_Map_Long.jpg" class="zoomable-img" alt="Business Model" style="width:100%;">
   `,
   modal6: `
