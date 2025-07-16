@@ -44,7 +44,8 @@ const modalContents = {
   `,
   modal6: `
     <h2>Impact</h2>
-    <p>Impact on each stakeholders.</p>
+    <p class="modal-text">Impact on each stakeholders.</p>
+    <p class="modal-text">These impacts span across cultural and marketing dimensions, showing how Goen brings value to individuals, communities, and companies.</p>
     <img src="images/Impact.jpg" alt="Impact" style="width:100%;" class="zoomable-img">
   `,
   modal7: `
